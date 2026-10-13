@@ -1,4 +1,5 @@
--- This module serves as the root of the `MyMathProject` library.
+-- This module serves as the root of the MyMathProject library.
 -- Import modules here that should be built as part of the library.
 import MyMathProject.Basic
 import MyMathProject.Demo
+import MyMathProject.GaoKao2025
