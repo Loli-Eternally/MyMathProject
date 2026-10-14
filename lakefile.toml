@@ -2,6 +2,14 @@ name = "MyMathProject"
 version = "0.1.0"
 defaultTargets = ["mymathproject"]
 
+# 全机共享 Mathlib 克隆，避免每个项目再 git clone 一份。
+packagesDir = "D:/LeanProjects/.lake-packages"
+
+# 使用已经浅克隆好的 v4.34.1，避免 lake 再从 GitHub 拉整库。
+[[require]]
+name = "mathlib"
+path = "D:/LeanProjects/.lake-packages/mathlib"
+
 [[lean_lib]]
 name = "MyMathProject"
 
